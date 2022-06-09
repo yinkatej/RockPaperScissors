@@ -4,10 +4,11 @@
 # In[55]:
 
 
-#api's needed for building contact networks
+
 import random
 class CustomException(Exception):
     pass
+    
 pair = [['scissors', 'paper'], ['rock', 'scissors'], ['paper', 'rock']]
 items = ['rock', 'paper', 'scissors']
 
@@ -23,9 +24,9 @@ def choice():
         else:    
             user = items[userInput]    
             com = items[random.randrange(3)]
-            print ('Computer play\'s '+com +'\nUser play\'s '+user)
+            print ('CPU ('+com +')\nUser ('+user')')
             if (user == com):
-                print('it\'s a draw play again')
+                print('It\'s a draw play again')
                 continue
 
             arr1 = [user, com]
@@ -56,20 +57,6 @@ def play():
             
 play()
 
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
