@@ -24,7 +24,7 @@ def choice():
         else:    
             user = items[userInput]    
             com = items[random.randrange(3)]
-            print ('CPU ('+com +')\nUser ('+user')')
+            print ('CPU ('+com +')\nUser ('+user +')')
             if (user == com):
                 print('It\'s a draw play again')
                 continue
