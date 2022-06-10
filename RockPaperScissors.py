@@ -30,7 +30,7 @@ def choice():
                 continue
 
             arr1 = [user, com]
-            arr2 = arr1.reverse()
+            arr2 = [com, user]
 
 
 
@@ -52,7 +52,7 @@ def play():
             print("********** User Wins! **********\n")
             terminate = int(input('Enter 0 to play again or 1 to terminate'))
         elif (check == False ):
-            print("********** Com Wins! **********\n")
+            print("********** CPU Wins! **********\n")
             terminate = int(input('Enter 0 to play again or 1 to terminate'))
             
 play()
